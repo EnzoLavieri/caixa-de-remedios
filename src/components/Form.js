@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+
 function Form() {
   return (
     <div class="m-5 p-4 w-50 mx-auto bg-light rounded-5">
@@ -60,17 +62,34 @@ function Form() {
         </div>
       </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">
-          Descricao
-        </label>
-        <input
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="1"
-          placeholder="Remedio para infeccao"
-        ></input>
+      <div className="row align-items-center">
+        <div className="col-md-9 mb-3">
+          <label htmlFor="exampleFormControlTextarea1" className="form-label">
+            Descrição
+          </label>
+          <input
+            className="form-control"
+            id="exampleFormControlTextarea1"
+            rows="1"
+            placeholder="Remédio para infecção"
+          />
+        </div>
+        <div className="col-md-3 d-flex justify-content-end align-items-end">
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value=""
+              id="checkDefault"
+            />
+            <label className="form-check-label" htmlFor="checkDefault">
+              Genérico
+            </label>
+          </div>
+        </div>
       </div>
+
+      <Button>Adicionar</Button>
     </div>
   );
 }
