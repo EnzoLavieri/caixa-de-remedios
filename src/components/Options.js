@@ -1,13 +1,17 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Options() {
   return (
     <div>
       <ul class="nav justify-content-center fs-4">
         <li class="createRemedio">
-          <a class="nav-link active" aria-current="page" href="#">
+          <Link
+            to={"/operacoes/criar"}
+            class="nav-link active"
+            aria-current="page"
+          >
             Criar
-          </a>
+          </Link>
         </li>
         <li class="editRemedio">
           <a class="nav-link" href="#">

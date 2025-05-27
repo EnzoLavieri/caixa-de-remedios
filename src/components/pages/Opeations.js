@@ -1,13 +1,14 @@
+import { Button } from "react-bootstrap";
 import NavBar from "../Nav";
 import Options from "../Options";
 
-function Opeations() {
+function Operations() {
   return (
     <div>
-      <NavBar />
+      <NavBar></NavBar>
       <Options />
     </div>
   );
 }
 
-export default Opeations;
+export default Operations;
