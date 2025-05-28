@@ -3,6 +3,9 @@ import NavBar from "../../Nav";
 import Options from "../../Options";
 import { Button } from "react-bootstrap";
 
+//os dados sao atulizados no banco de dados, mas o estado do componente nao é atualizado automaticamente
+//so atualiza quando da f5, ver como resolver isso
+
 function Edit() {
   const [values, setValues] = useState([]);
   const [formData, setFormData] = useState({
@@ -98,24 +101,27 @@ function Edit() {
 
   return (
     <div>
-      <NavBar />
+      <header
+        className="bg-secondary-subtle rounded-5 rounded-top-0 border border-top-0 border-primary "
+        style={{ width: "120vh", alignItems: "center", margin: "0 auto" }}
+      >
+        <NavBar />
+      </header>{" "}
       <Options />
-
       <select
         className="form-select"
         onChange={handleSelectChange}
         value={formData.id}
-        style={{ width: "15rem", alignContent: "center", margin: "20px auto" }}
+        style={{ width: "15rem", alignContent: "center", margin: "10px auto" }}
       >
-        <option value="">Selecione um medicamento</option>
+        <option value="">Selecione um remedio</option>
         {values.map((medicamento) => (
           <option key={medicamento.id} value={medicamento.id}>
             {medicamento.name}
           </option>
         ))}
       </select>
-
-      <div className="m-5 p-4 w-50 mx-auto bg-light rounded-5">
+      <div className=" p-4 w-50 mx-auto bg-light rounded-5">
         <div className="row">
           <div className="col-md-3 mb-3">
             <label htmlFor="name" className="form-label">

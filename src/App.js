@@ -6,13 +6,7 @@ import Create from "./components/pages/CUD/Create";
 import Delete from "./components/pages/CUD/Delete";
 import Edit from "./components/pages/CUD/Edit";
 import Home from "./components/pages/Home";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

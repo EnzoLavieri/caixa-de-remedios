@@ -49,7 +49,7 @@ function Form() {
   };
 
   return (
-    <div className="m-5 p-4 w-50 mx-auto bg-light rounded-5">
+    <div className=" p-4 w-50 mx-auto bg-light rounded-5">
       <div className="row">
         <div className="col-md-3 mb-3">
           <label htmlFor="name" className="form-label">
