@@ -14,9 +14,13 @@ function Options() {
           </Link>
         </li>
         <li class="editRemedio">
-          <a class="nav-link" href="#">
+          <Link
+            to={"/operacoes/editar"}
+            class="nav-link active"
+            aria-current="page"
+          >
             Editar
-          </a>
+          </Link>
         </li>
 
         <li class="delRemedio">
